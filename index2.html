@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Ariff - Portfolio</title>
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --accent: #fd79a8;
+            --dark: #2d3436;
+            --darker: #1e272e;
+            --light: #dfe6e9;
+            --lighter: #f5f6fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .card {
+            background-color: var(--dark);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        
+        .education-item, .project, .skill-category {
+            margin-bottom: 1.5rem;
+        }
+        
+        .education-item h3, .project h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .date {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-tag {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            background-color: var(--accent);
+            transform: scale(1.05);
+        }
+        
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .interest-item {
+            background-color: rgba(253, 121, 168, 0.2);
+            border: 1px solid var(--accent);
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SHAIK ARIFF</h1>
+            <p>Computer Science Engineer | AI & ML Enthusiast</p>
+            <div class="contact-info">
+                <a href="mailto:ariffshaik98@gmail.com">ariffshaik98@gmail.com</a>
+                <a href="http://www.linkedin.com/in/shaik-ariff-195a8b30b" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="objective">
+            <h2>Objective</h2>
+            <div class="card">
+                <p>To work in challenging environmental set up where I can get an opportunity to learn, improve skills for my personal growth as well as to contribute positively for the growth of organization.</p>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="education-item">
+                    <h3>Bachelor of Technology in Computer Science and Engineering (AI & ML)</h3>
+                    <p class="date">2021 – 2025</p>
+                    <p>Srinivasa Ramanujan Institute of Technology, Anantapur, India</p>
+                    <p>CGPA: 7.62</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Intermediate - MPC</h3>
+                    <p class="date">2019 – 2021</p>
+                    <p>Sri Chaitanya Junior College, Anantapur, India</p>
+                    <p>CGPA: 7.1</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Secondary School Certificate</h3>
+                    <p class="date">2019</p>
+                    <p>Narayana E-Techno School, Anantapur, India</p>
+                    <p>CGPA: 9.3</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="project">
+                    <h3>Tourism Website</h3>
+                    <p><strong>Technologies:</strong> Java, HTML, CSS, JavaScript, MySQL</p>
+                    <p><strong>Description:</strong> This project focuses on developing a dynamic and visually engaging tourism website where users can browse through content, images, and videos of popular destinations. The objective is to provide an immersive experience for travelers by showcasing detailed information, travel guides, and multimedia content about various tourist attractions.</p>
+                    <p><strong>Outcome:</strong> A responsive and user-friendly tourism website that enhances user engagement through rich multimedia content, intuitive navigation, and seamless browsing, making it an ideal platform for travel enthusiasts and agencies.</p>
+                </div>
+                
+                <div class="project">
+                    <h3>Password Generator</h3>
+                    <p><strong>Technologies:</strong> Java, HTML, CSS</p>
+                    <p><strong>Description:</strong> This project involves the development of a secure and interactive password generator tool. Users can specify password length and generate strong, randomized passwords that include uppercase and lowercase letters, numbers, and special characters. The tool ensures enhanced password strength to help users maintain online security for their accounts.</p>
+                    <p><strong>Outcome:</strong> A responsive and efficient password generator application that promotes good security practices by helping users create strong and complex passwords. The project demonstrates strong integration of front-end and back-end technologies, offering an intuitive interface and reliable password generation logic for personal or organizational use.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <div class="skills-container">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="internships">
+            <h2>Internships</h2>
+            <div class="card">
+                <h3>Dhee Coding Lab</h3>
+                <p class="date">Dec 2024 - Present</p>
+                <ul>
+                    <li>Learning Core Java to build Applications</li>
+                    <li>Learning database MySQL for database management</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="card">
+                <ul>
+                    <li>Java programming from Simplilearn</li>
+                    <li>Upper-Intermediate English from Edx</li>
+                    <li>Salesforce Certified AI Associate from Salesforce</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div class="card">
+                <ul>
+                    <li>Member of National Service Scheme at our college</li>
+                    <li>Held leadership roles in student organizations and Innovative club</li>
+                    <li>Participated in hackathons and coding competitions</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="card">
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <span>🎵</span>
+                        <span>Listening Music — Listening to music gives me relaxation and mental well-being</span>
+                    </div>
+                    <div class="interest-item">
+                        <span>🎬</span>
+                        <span>Watching Anime — I really love watching anime for time being</span>
+                    </div>
+                    <div class="interest-item">
+                        <span>🍳</span>
+                        <span>Cooking — I have a deep passion for cooking and excel at preparing most Indian-style dishes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shaik Ariff. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
